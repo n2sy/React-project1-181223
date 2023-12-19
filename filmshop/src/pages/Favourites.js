@@ -4,6 +4,7 @@ import FilmList from '../components/FilmList';
 
 function Favourites() {
   const favCtx = useContext(FavContext); 
+  console.log(favCtx.favourites);
   
   if(favCtx.totalFav == 0)
   return <h3>You don't have favourites yet !</h3>

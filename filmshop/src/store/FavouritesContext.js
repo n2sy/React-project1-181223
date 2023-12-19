@@ -16,6 +16,7 @@ export function FavouriteContexteProvider(props) {
 
     function ajouterFavori(film) {
         setTabFav((prev) => {
+            console.log(prev, film);
             return [...prev, film];
         })
     }
