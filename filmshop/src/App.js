@@ -22,14 +22,19 @@ function App() {
       description : "La bande de Neil McCauley à laquelle est venu se greffer Waingro, une nouvelle recrue, attaque un fourgon blindé pour s'emparer d'une somme importante en obligations. Cependant, ce dernier tue froidement l'un des convoyeurs et Chris Shiherlis se retrouve obligé de terminer le travail.",
       image : 'https://www.ecranlarge.com/media/cache/1600x1200/uploads/image/001/029/heat-photo-1029907.jpg'
     }
-  ]
+  ];
+
+  function addNewFilm(film) {
+    film.id = tabFilms[tabFilms.length - 1].id + 1;
+    tabFilms.push(film);
+  }
   return (
     <>
     <Navbar></Navbar>
     <Routes>
       <Route path='/' element={<Accueil></Accueil>}></Route>
       <Route path='/all' element={<AllFilms listFilms={tabFilms}></AllFilms>}></Route>
-      <Route path='/add' element={<AddFilm></AddFilm>}></Route>
+      <Route path='/add' element={<AddFilm addFilm={addNewFilm}></AddFilm>}></Route>
       <Route path='/favourites' element={<Favourites></Favourites>}></Route>
     </Routes>
     </>

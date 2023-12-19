@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from './FilmFormCtrl.module.css';
+import { useNavigate } from 'react-router-dom';
 
 
-function FilmFormCtrl() {
+function FilmFormCtrl(props) {
+    let navigate = useNavigate();
     const [nFilm, setnFilm] = useState({
         title : '',
         year : '',
@@ -62,6 +64,10 @@ function FilmFormCtrl() {
 
     function submitHandler(e) {
         e.preventDefault();
+        props.addFilm(nFilm);
+        //navigate('/all', {replace : true})
+        // navigate('/all', {replace : true})
+        //navigate(-1)
     }
   return (
     <form className={styles.form} onSubmit={submitHandler}>

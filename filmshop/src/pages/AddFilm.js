@@ -1,9 +1,9 @@
 import React from 'react'
-import FilmFormCtrl from '../components/FilmFormCtrl';
+import FilmFormNonCtrl from '../components/FilmFormNonCtrl'
 
-function AddFilm() {
+function AddFilm(props) {
   return (
-    <div><FilmFormCtrl></FilmFormCtrl></div>
+    <div><FilmFormNonCtrl addFilm={props.addFilm}></FilmFormNonCtrl></div>
   )
 }
 
