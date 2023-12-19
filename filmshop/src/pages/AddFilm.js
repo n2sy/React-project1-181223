@@ -1,8 +1,9 @@
 import React from 'react'
+import FilmFormCtrl from '../components/FilmFormCtrl';
 
 function AddFilm() {
   return (
-    <div>AddFilm</div>
+    <div><FilmFormCtrl></FilmFormCtrl></div>
   )
 }
 
