@@ -5,6 +5,7 @@ import AllFilms from './pages/AllFilms';
 import AddFilm from './pages/AddFilm';
 import Favourites from './pages/Favourites';
 import Navbar from './components/Navbar';
+import Login from './pages/Login';
 
 function App() {
   const tabFilms = [
@@ -36,6 +37,7 @@ function App() {
       <Route path='/all' element={<AllFilms listFilms={tabFilms}></AllFilms>}></Route>
       <Route path='/add' element={<AddFilm addFilm={addNewFilm}></AddFilm>}></Route>
       <Route path='/favourites' element={<Favourites></Favourites>}></Route>
+      <Route path='/login' element={<Login></Login>}></Route>
     </Routes>
     </>
   );

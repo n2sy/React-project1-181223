@@ -5,6 +5,7 @@ import FavContext from '../store/FavouritesContext';
 
 function FilmItem(props) {
   const favCtx = useContext(FavContext);
+  console.log(favCtx);
   function favouriteHandler() {
     if(favCtx.isFavourite(props.oneFilm.id))
        favCtx.removeFavourite(props.oneFilm);

@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 
 const FavContext = createContext(
     {
-        favourites : [],
+        favourites : ['Haythem'],
         totalFav : 0,
         addFavourite : () => { },
         removeFavourite : () => { },

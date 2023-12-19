@@ -27,6 +27,8 @@ function Navbar() {
                     </NavLink></li>
                 <li><Link to="/add">Add Film</Link></li>
                 <li><NavLink style={({isActive}) => isActive ? s : s1} to="/favourites">Favourites <span class="badge bg-secondary">{ favCtx.totalFav}</span></NavLink></li>
+                <li><Link to="/login">Login</Link></li>
+
             </ul>
         </nav>
 
