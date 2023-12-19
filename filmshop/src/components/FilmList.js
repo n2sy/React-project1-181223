@@ -1,10 +1,15 @@
 import React from 'react'
 import FilmItem from './FilmItem'
 
-function FilmList() {
+function FilmList(props) {
   return (
     <ol>
-        <FilmItem></FilmItem>
+        {
+            props.listFilms.map( (film) => {
+                return  <FilmItem key={film.id} oneFilm={film}></FilmItem>
+
+            })
+        }
     </ol>
   )
 }

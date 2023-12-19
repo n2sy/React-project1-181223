@@ -28,7 +28,7 @@ function App() {
     <Navbar></Navbar>
     <Routes>
       <Route path='/' element={<Accueil></Accueil>}></Route>
-      <Route path='/all' element={<AllFilms></AllFilms>}></Route>
+      <Route path='/all' element={<AllFilms listFilms={tabFilms}></AllFilms>}></Route>
       <Route path='/add' element={<AddFilm></AddFilm>}></Route>
       <Route path='/favourites' element={<Favourites></Favourites>}></Route>
     </Routes>

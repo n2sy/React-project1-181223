@@ -4,10 +4,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 function Navbar() {
     let s = {
-        'text-decoration' : 'underline'
+        'textDecoration' : 'underline'
     }
     let s1 = {
-        'text-decoration' : 'overline'
+        'textDecoration' : 'overline'
     }
   return (
     <header className={styles.header}>

@@ -1,10 +1,10 @@
 import React from 'react'
 import FilmList from '../components/FilmList'
 
-function AllFilms() {
+function AllFilms(props) {
   return (
     <div>
-        <FilmList></FilmList>
+        <FilmList listFilms={props.listFilms}></FilmList>
     </div>
   )
 }
